@@ -10,7 +10,7 @@ class LanguageController extends Controller
     public function __invoke($lang)
     {
         if (array_key_exists($lang, config('languages'))) {
-            Session::put($lang, 'applocale');
+            Session::put('applocale', $lang);
         }
 
         return Redirect::back();

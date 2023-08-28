@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('lang/{lang}', LanguageController::class);
+Route::get('lang/{lang}', LanguageController::class)->name('languages');
 
 Route::middleware([
     'auth:sanctum',
