@@ -1,4 +1,7 @@
 <x-guest-layout>
+    <div class="bg-gray-100 dark:bg-gray-900 text-right">
+        <x-theme-switcher />
+    </div>
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
