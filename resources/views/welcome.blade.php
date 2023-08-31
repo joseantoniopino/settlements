@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,21 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+        <!-- Scripts -->
+        <script>
+            // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+            if (
+                localStorage.getItem('color-theme') === 'dark' ||
+                (!('color-theme' in localStorage) &&
+                    window.matchMedia('(prefers-color-scheme: dark)').matches)
+            ) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/theme_switcher.js'])
 
         <!-- Styles -->
         <style>
@@ -30,6 +45,9 @@
                     @endauth
                 </div>
             @endif
+                <div class="bg-gray-100 dark:bg-gray-900 text-right">
+                    <x-theme-switcher />
+                </div>
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
