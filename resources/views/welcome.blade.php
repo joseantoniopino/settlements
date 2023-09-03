@@ -44,12 +44,31 @@
         </div>
 
         <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
-            <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            {{--<ul class="flex flex-col lg:flex-row list-none mr-auto">
                 <li class="flex items-center">
                     <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing">
                         <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>Docs</a>
                 </li>
-            </ul>
+            </ul>--}}
+
+            @if (Route::has('login'))
+                <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                    @auth
+                        <li class="flex items-center">
+                            <a href="{{ url('/dashboard') }}" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">Dashboard</a>
+                        </li>
+                    @else
+                        <li class="flex items-center">
+                            <a href="{{ route('login') }}" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">Log in</a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="flex items-center">
+                                <a href="{{ route('register') }}" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">Register</a>
+                            </li>
+                        @endif
+                    @endauth
+                </ul>
+            @endif
             <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
 
                 <li class="flex items-center">
