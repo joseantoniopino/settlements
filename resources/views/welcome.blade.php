@@ -86,7 +86,7 @@
 <main>
     <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
         <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("{{ Vite::asset('resources/images/spectacular_settlement.jpg') }}");'>
-          <span id="blackOverlay" class="w-full h-full absolute opacity-50 dark:opacity-75 bg-black"></span>
+          <span id="blackOverlay" class="w-full h-full absolute opacity-50 dark:opacity-75 bg-indigo-800/50"></span>
         </div>
         <div class="container relative mx-auto">
             <div class="items-center flex flex-wrap">
@@ -103,19 +103,19 @@
             </div>
         </div>
     </div>
-    <div class="w-full h-[100px] bg-indigo-100 dark:bg-indigo-950 drop-shadow-2xl">
 
-    </div>
+    <div class="w-full h-[40px] bg-indigo-100 dark:bg-indigo-950 drop-shadow-2xl"></div>
 
     <section class="relative bg-indigo-100 dark:bg-indigo-800 h-auto">
 
         <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("{{ Vite::asset('resources/images/faerun_map.jpg') }}");'>
-            <span class="w-full h-full absolute opacity-50 dark:opacity-75 bg-indigo-100 dark:bg-indigo-800"></span>
+            <span class="w-full h-full absolute opacity-50 dark:opacity-75 bg-indigo-300 dark:bg-indigo-800/50"></span>
+            <span class="w-full h-full absolute opacity-50 dark:opacity-75 bg-indigo-300 dark:bg-indigo-800"></span>
         </div>
 
-        <div class="absolute top-0 w-full h-full bg-center bg-cover">
+        {{--<div class="absolute top-0 w-full h-full bg-center bg-cover">
             <span class="w-full h-full absolute opacity-50 dark:opacity-75 bg-red-100 dark:bg-green-800/75"></span>
-        </div>
+        </div>--}}
 
         <div class="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center py-2 px-2">
 
@@ -231,30 +231,14 @@
 
     </section>
 
-
 </main>
-<footer class="relative bg-gray-300 pt-8 pb-6">
-    {{--<div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px;">
-        <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-        >
-            <polygon
-                class="text-gray-300 fill-current"
-                points="2560 0 2560 100 0 100"
-            ></polygon>
-        </svg>
-    </div>--}}
+
+<footer class="relative bg-indigo-50 dark:bg-indigo-950 pt-8 pb-6">
     <div class="container mx-auto px-4">
         <div class="flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4">
-                <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
-                <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                <h4 class="text-3xl text-gray-700 dark:text-gray-100 font-semibold">Let's keep in touch!</h4>
+                <h5 class="text-lg mt-0 mb-2 text-gray-700 dark:text-gray-100">
                     Find us on any of these platforms, we respond 1-2 business days.
                 </h5>
                 <div class="mt-6">
@@ -294,28 +278,28 @@
                         <ul class="list-unstyled">
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://www.creative-tim.com/presentation"
                                 >About Us</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://blog.creative-tim.com"
                                 >Blog</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://www.github.com/creativetimofficial"
                                 >Github</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://www.creative-tim.com/bootstrap-themes/free"
                                 >Free Products</a
                                 >
@@ -330,28 +314,28 @@
                         <ul class="list-unstyled">
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
                                 >MIT License</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://creative-tim.com/terms"
                                 >Terms &amp; Conditions</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://creative-tim.com/privacy"
                                 >Privacy Policy</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                                    class="text-gray-700 dark:text-gray-100 hover:text-gray-900 font-semibold block pb-2 text-sm"
                                     href="https://creative-tim.com/contact-us"
                                 >Contact Us</a
                                 >
@@ -361,7 +345,7 @@
                 </div>
             </div>
         </div>
-        <hr class="my-6 border-gray-400"/>
+        <hr class="my-6 border-gray-400 dark:border-gray-200"/>
         <div
             class="flex flex-wrap items-center md:justify-between justify-center"
         >
@@ -370,7 +354,7 @@
                     Copyright © 2019 Tailwind Starter Kit by
                     <a
                         href="https://www.creative-tim.com"
-                        class="text-gray-600 hover:text-gray-900"
+                        class="text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-gray-200"
                     >Creative Tim</a
                     >.
                 </div>
