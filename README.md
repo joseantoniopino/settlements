@@ -47,23 +47,31 @@
 
 ### Antigüedad
 
-| d20   | Antigüedad                                                                                                        |
-|-------|-------------------------------------------------------------------------------------------------------------------|
-| 1-3   | Reciente. El puesto comercial se ha establecido hace menos de un año. (Tirada de afluencia de visitantes –1)      |
-| 4-8   | Asentado. El puesto comercial lleva abierto al menos un par de años. (Tirada de afluencia de visitantes +0)       |
-| 9-13  | Longevo. El puesto comercial se construyó hace décadas. (Tirada de afluencia de visitantes +1)                    |
-| 14-17 | Viejo. El puesto comercial se construyó hace unos cien años. (Tirada de afluencia de visitantes +2)               |
-| 18-19 | Antiguo. El puesto comercial se construyó hace siglos. (Tirada de afluencia de visitantes +3)                     |
-| 20    | Desconocido. Nadie sabe cuánto tiempo lleva abierto este puesto comercial. (Tirada de afluencia de visitantes +4) |
+| d20   | Antigüedad                                                                                                        | Afluencia de visitantes |
+|-------|-------------------------------------------------------------------------------------------------------------------|-------------------------|
+| 1-3   | Reciente. El puesto comercial se ha establecido hace menos de un año. (Tirada de afluencia de visitantes –1)      | -1                      |
+| 4-8   | Asentado. El puesto comercial lleva abierto al menos un par de años. (Tirada de afluencia de visitantes +0)       | 0                       |
+| 9-13  | Longevo. El puesto comercial se construyó hace décadas. (Tirada de afluencia de visitantes +1)                    | +1                      |
+| 14-17 | Viejo. El puesto comercial se construyó hace unos cien años. (Tirada de afluencia de visitantes +2)               | +2                      |
+| 18-19 | Antiguo. El puesto comercial se construyó hace siglos. (Tirada de afluencia de visitantes +3)                     | +3                      |
+| 20    | Desconocido. Nadie sabe cuánto tiempo lleva abierto este puesto comercial. (Tirada de afluencia de visitantes +4) | +4                      |
 
 ### Estado
 
-| d20   | Estado                                                                                                                                                                                                                     | Modificación a la Riqueza de la Población |
-|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| 1-2   | Destartalado. Parece que algunos de los edificios están a punto de venirse abajo y no hay ninguna carretera propiamente dicha, solo zonas que el tránsito ha convertido en caminos. (Tirada de riqueza de la población -6) | -6                                        |
-| 3-6   | Pobre. Los edificios y sus alrededores están sucios y en mal estado. Las carreteras son de tierra e irregulares. (Tirada de riqueza de la población -3)                                                                    | -3                                        |
-| 7-14  | Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla. (Tirada de riqueza de la población +0)                                                                     | 0                                         |
-| 15-18 | Bueno. La mayoría de los edificios están bien cuidados y decorados con moderación. Los caminos son de adoquines o quizás de ladrillos baratos. (Tirada de riqueza de la población +3)                                      | +3                                        |
-| 19-20 | Inmaculado. Las tiendas y casas están impecables, adornadas con un gusto exquisito, y los caminos son de piedras regulares y lisas. (Tirada de riqueza de la población +6)                                                 | +6                                        |
+| d20   | Estado                                                                                                                                                                                                                     | Riqueza de la Población |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| 1-2   | Destartalado. Parece que algunos de los edificios están a punto de venirse abajo y no hay ninguna carretera propiamente dicha, solo zonas que el tránsito ha convertido en caminos. (Tirada de riqueza de la población -6) | -6                      |
+| 3-6   | Pobre. Los edificios y sus alrededores están sucios y en mal estado. Las carreteras son de tierra e irregulares. (Tirada de riqueza de la población -3)                                                                    | -3                      |
+| 7-14  | Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla. (Tirada de riqueza de la población +0)                                                                     | 0                       |
+| 15-18 | Bueno. La mayoría de los edificios están bien cuidados y decorados con moderación. Los caminos son de adoquines o quizás de ladrillos baratos. (Tirada de riqueza de la población +3)                                      | +3                      |
+| 19-20 | Inmaculado. Las tiendas y casas están impecables, adornadas con un gusto exquisito, y los caminos son de piedras regulares y lisas. (Tirada de riqueza de la población +6)                                                 | +6                      |
 
+### Afluencia de visitantes
 
+| d20   | Afluencia de Visitantes                                                                | Tamaño | Delincuencia |
+|-------|----------------------------------------------------------------------------------------|--------|--------------|
+| 1-2   | Desierto. No parece que nadie visite este lugar.                                       | +0     | +2           |
+| 3-6   | Grupos. Los visitantes son la excepción, pero puede que haya algunos en las cercanías. | +1     | +1           |
+| 7-14  | Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.                   | +2     | +0           |
+| 15-18 | Multitudes. Se ven muchas caras nuevas con frecuencia.                                 | +3     | -1           |
+| 19-20 | Masas. Por todas partes hay gente nueva yendo y viniendo a todas horas.                | +4     | -2           |

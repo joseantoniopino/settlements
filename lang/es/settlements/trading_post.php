@@ -151,11 +151,11 @@ return [
                 ],
             ],
             3 => [
-                'description' => 'Asentado. El puesto comercial lleva abierto al menos un par de años.',
+                'description' => 'Reciente. El puesto comercial se ha establecido hace menos de un año.',
                 'special' => null,
                 'sub_table' => null,
                 'table_modifications' => [
-                    'visitor_traffic' => 0,
+                    'visitor_traffic' => -1,
                 ],
             ],
             4 => [
@@ -334,19 +334,19 @@ return [
                 ],
             ],
             5 => [
-                'description' => 'Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla.',
+                'description' => 'Pobre. Los edificios y sus alrededores están sucios y en mal estado. Las carreteras son de tierra e irregulares.',
                 'special' => null,
                 'sub_table' => null,
                 'table_modifications' => [
-                    'population_wealth' => 0,
+                    'population_wealth' => -3,
                 ],
             ],
             6 => [
-                'description' => 'Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla.',
+                'description' => 'Pobre. Los edificios y sus alrededores están sucios y en mal estado. Las carreteras son de tierra e irregulares.',
                 'special' => null,
                 'sub_table' => null,
                 'table_modifications' => [
-                    'population_wealth' => 0,
+                    'population_wealth' => -3,
                 ],
             ],
             7 => [
@@ -366,19 +366,19 @@ return [
                 ],
             ],
             9 => [
-                'description' => 'Bueno. La mayoría de los edificios están bien cuidados y decorados con moderación. Los caminos son de adoquines o quizás de ladrillos baratos.',
+                'description' => 'Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla.',
                 'special' => null,
                 'sub_table' => null,
                 'table_modifications' => [
-                    'population_wealth' => 3,
+                    'population_wealth' => 0,
                 ],
             ],
             10 => [
-                'description' => 'Bueno. La mayoría de los edificios están bien cuidados y decorados con moderación. Los caminos son de adoquines o quizás de ladrillos baratos.',
+                'description' => 'Decente. Los edificios están limpios y decorados con sobriedad. Los caminos son de tierra aplastada o gravilla.',
                 'special' => null,
                 'sub_table' => null,
                 'table_modifications' => [
-                    'population_wealth' => 3,
+                    'population_wealth' => 0,
                 ],
             ],
             11 => [
@@ -459,6 +459,193 @@ return [
                 'sub_table' => null,
                 'table_modifications' => [
                     'population_wealth' => 6,
+                ],
+            ],
+        ],
+    ],
+
+    /*AFLUENCIA DE VISITANTES*/
+    'visitor_traffic' => [
+        'dice_type' => '1d20',
+        'result' => [
+            1 => [
+                'description' => 'Desierto. No parece que nadie visite este lugar.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 0,
+                    'crime' => 2,
+                ],
+            ],
+            2 => [
+                'description' => 'Desierto. No parece que nadie visite este lugar.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 0,
+                    'crime' => 2,
+                ],
+            ],
+            3 => [
+                'description' => 'Grupos. Los visitantes son la excepción, pero puede que haya algunos en las cercanías.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 1,
+                    'crime' => 1,
+                ],
+            ],
+            4 => [
+                'description' => 'Grupos. Los visitantes son la excepción, pero puede que haya algunos en las cercanías.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 1,
+                    'crime' => 1,
+                ],
+            ],
+            5 => [
+                'description' => 'Grupos. Los visitantes son la excepción, pero puede que haya algunos en las cercanías.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 1,
+                    'crime' => 1,
+                ],
+            ],
+            6 => [
+                'description' => 'Grupos. Los visitantes son la excepción, pero puede que haya algunos en las cercanías.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 1,
+                    'crime' => 1,
+                ],
+            ],
+            7 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            8 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            9 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            10 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            11 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            12 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            13 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            14 => [
+                'description' => 'Aglomeraciones. Se suelen ver nuevos visitantes casi todos los días.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 2,
+                    'crime' => 0,
+                ],
+            ],
+            15 => [
+                'description' => 'Multitudes. Se ven muchas caras nuevas con frecuencia',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 3,
+                    'crime' => -1,
+                ],
+            ],
+            16 => [
+                'description' => 'Multitudes. Se ven muchas caras nuevas con frecuencia',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 3,
+                    'crime' => -1,
+                ],
+            ],
+            17 => [
+                'description' => 'Multitudes. Se ven muchas caras nuevas con frecuencia',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 3,
+                    'crime' => -1,
+                ],
+            ],
+            18 => [
+                'description' => 'Multitudes. Se ven muchas caras nuevas con frecuencia',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 3,
+                    'crime' => -1,
+                ],
+            ],
+            19 => [
+                'description' => 'Masas. Por todas partes hay gente nueva yendo y viniendo a todas horas.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 4,
+                    'crime' => -2,
+                ],
+            ],
+            20 => [
+                'description' => 'Masas. Por todas partes hay gente nueva yendo y viniendo a todas horas.',
+                'special' => null,
+                'sub_table' => null,
+                'table_modifications' => [
+                    'size' => 4,
+                    'crime' => -2,
                 ],
             ],
         ],
