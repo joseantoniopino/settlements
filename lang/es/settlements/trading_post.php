@@ -7,7 +7,7 @@ return [
     /*ORIGEN*/
     'origin' => [
         'dice_type' => '1d8',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Accidental: El puesto comercial se creó por accidente, por ejemplo, después de que se averiase o perdiese una caravana. Las medidas que se tomaron para remediar el accidente acabaron dando lugar al puesto comercial.',
                 'special' => null,
@@ -57,12 +57,13 @@ return [
                 'table_modifications' => null,
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*ESPECIALIDAD*/
     'specialty' => [
         'dice_type' => '1d6',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Métodos de envío atípicos. A este puesto comercial se lo conoce por su forma única y efectiva de transportar mercancías.',
                 'special' => null,
@@ -103,7 +104,7 @@ return [
         'sub_tables' => [
             'trading_post_speciality_2' => [
                 'dice_type' => '1d6',
-                'result' => [
+                'results' => [
                     1 => 'Una comida excepcional',
                     2 => 'Una comida excepcional',
                     3 => 'Una comida excepcional',
@@ -114,7 +115,7 @@ return [
             ],
             'trading_post_speciality_6' => [
                 'dice_type' => '1d10',
-                'result' => [
+                'results' => [
                     1 => 'Brutos y matones',
                     2 => 'Agentes clandestinos',
                     3 => 'Arqueros y honderos',
@@ -133,7 +134,7 @@ return [
     /*ANTIGÜEDAD*/
     'age' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Reciente. El puesto comercial se ha establecido hace menos de un año.',
                 'special' => null,
@@ -295,12 +296,13 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*ESTADO*/
     'condition' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Destartalado. Parece que algunos de los edificios están a punto de venirse abajo y no hay ninguna carretera propiamente dicha, solo zonas que el tránsito ha convertido en caminos.',
                 'special' => null,
@@ -462,12 +464,13 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*AFLUENCIA DE VISITANTES*/
     'visitor_traffic' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Desierto. No parece que nadie visite este lugar.',
                 'special' => null,
@@ -649,5 +652,6 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 ];

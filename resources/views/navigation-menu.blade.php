@@ -15,6 +15,10 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link href="{{ route('trading-post.index') }}" :active="request()->routeIs('trading-post.index')">
+                        {{ Str::title(__('custom.trading_posts')) }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -71,7 +75,9 @@
                     </div>
                 @endif
 
-                <x-theme-switcher />
+                <div class="mt-5">
+                    <x-theme-switcher />
+                </div>
 
                 <!-- Settings Dropdown -->
                 <div class="ml-3 relative">

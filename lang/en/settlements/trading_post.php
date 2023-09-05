@@ -7,7 +7,7 @@ return [
     /*ORIGIN*/
     'origin' => [
         'dice_type' => '1d8',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Accidental. The trading post came about due to an accident, such as a caravan breaking down or mistaken directions. What was set up to deal with the accident eventually became the trading post.',
                 'special' => null,
@@ -57,12 +57,13 @@ return [
                 'table_modifications' => null,
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*SPECIALTY*/
     'specialty' => [
         'dice_type' => '1d6',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Atypical Shipping Methods. This trading post is known for having unique and effective ways to move goods.',
                 'special' => null,
@@ -103,7 +104,7 @@ return [
         'sub_tables' => [
             'trading_post_speciality_2' => [
                 'dice_type' => '1d6',
-                'result' => [
+                'results' => [
                     1 => 'Excellent and unique food',
                     2 => 'Excellent and unique food',
                     3 => 'Excellent and unique food',
@@ -114,7 +115,7 @@ return [
             ],
             'trading_post_speciality_6' => [
                 'dice_type' => '1d10',
-                'result' => [
+                'results' => [
                     1 => 'Brutes & Brawlers',
                     2 => 'Cloak & Dagger',
                     3 => 'Bows & Slings',
@@ -133,7 +134,7 @@ return [
     /*AGE*/
     'age' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Recent. The trading post was established within the past year.',
                 'special' => null,
@@ -295,12 +296,13 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*CONDITION*/
     'condition' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Ramshackle. A few of the buildings look to be falling down. There are no formal roads, only trodden paths.',
                 'special' => null,
@@ -462,12 +464,13 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 
     /*VISITOR TRAFFIC*/
     'visitor_traffic' => [
         'dice_type' => '1d20',
-        'result' => [
+        'results' => [
             1 => [
                 'description' => 'Vacant. No one seems to be visiting this place.',
                 'special' => null,
@@ -649,6 +652,7 @@ return [
                 ],
             ],
         ],
+        'sub_tables' => null,
     ],
 
 ];
