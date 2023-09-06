@@ -1,0 +1,61 @@
+{
+    "dice_type": "1d8",
+    "results": [
+        {
+            "result": 1,
+            "description": "accidental",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 2,
+            "description": "business_venture",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 3,
+            "description": "crossroads",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 4,
+            "description": "military_outpost",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 5,
+            "description": "no_mans_land",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 6,
+            "description": "native",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 7,
+            "description": "overnight_stop",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        },
+        {
+            "result": 8,
+            "description": "wilderness_expert",
+            "special": null,
+            "choice": null,
+            "table_modifications": null,
+        }
+    ]
+}
