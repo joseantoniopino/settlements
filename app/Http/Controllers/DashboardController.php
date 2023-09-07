@@ -10,7 +10,6 @@ class DashboardController extends Controller
     public function __invoke()
     {
         // $tradingPostGenerators = TradingPostData::fromArray(TradingPost::getGenerator('origin'));
-
         return view('dashboard');
     }
 }
