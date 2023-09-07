@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\DataModels\TradingPostData;
+use App\Models\Settlements\TradingPost\TradingPost;
 
 class DashboardController extends Controller
 {
     public function __invoke()
     {
-        $tradingPostOriginData = TradingPostData::fromArray(__('settlements/trading_post.origin'));
+        $tradingPostGenerators = TradingPostData::fromArray(TradingPost::getGenerator('origin'));
+        dd($tradingPostGenerators->getDescription(1));
+
         return view('dashboard', ['tradingPostOriginData' => $tradingPostOriginData]);
     }
 }
