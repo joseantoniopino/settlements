@@ -6,649 +6,81 @@ return [
 
     /*ORIGIN*/
     'origin' => [
-        'dice_type' => '1d8',
-        'results' => [
-            1 => [
-                'description' => 'Accidental. The trading post came about due to an accident, such as a caravan breaking down or mistaken directions. What was set up to deal with the accident eventually became the trading post.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            2 => [
-                'description' => 'Business Venture. The trading post was established by a wealthy entrepreneur specifically to be a trading post from the start.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            3 => [
-                'description' => 'Crossroads. The trading post is at the intersection of more than one major trade route.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            4 => [
-                'description' => 'Military Outpost. The trading post was built on the remnants of an old fortress or watchtower, the structures of which have long since fallen down or been repurposed by the locals.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            5 => [
-                'description' => 'No Man’s Land. The trading post was established as a neutral place where opposing forces could purchase wares, without encroaching on enemy territory.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            6 => [
-                'description' => 'Native. The trading post was started by someone native to the area, who saw potential in trade with passersby.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            7 => [
-                'description' => 'Overnight Stop. The trading post was originally a single, large house for overnight stays for weary travelers, which soon grew, along with the demand for accommodations.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            8 => [
-                'description' => 'Wilderness Expert. The trading post was started when a trapper, hunter or guide set up a camp, in order to aid those passing through the area.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-        ],
+        "accidental" => "Accidental. The trading post came about due to an accident, such as a caravan breaking down or mistaken directions. What was set up to deal with the accident eventually became the trading post.",
+        "business_venture" => "Business Venture. The trading post was established by a wealthy entrepreneur specifically to be a trading post from the start.",
+        "crossroads" => "Crossroads. The trading post is at the intersection of more than one major trade route.",
+        "military_outpost" => "Military Outpost. The trading post was built on the remnants of an old fortress or watchtower, the structures of which have long since fallen down or been repurposed by the locals.",
+        "no_mans_land" => "No Man’s Land. The trading post was established as a neutral place where opposing forces could purchase wares, without encroaching on enemy territory.",
+        "native" => "Native. The trading post was started by someone native to the area, who saw potential in trade with passersby.",
+        "overnight_stop" => "Overnight Stop. The trading post was originally a single, large house for overnight stays for weary travelers, which soon grew, along with the demand for accommodations.",
+        "wilderness_expert" => "Wilderness Expert. The trading post was started when a trapper, hunter or guide set up a camp, in order to aid those passing through the area."
     ],
 
     /*SPECIALTY*/
     'specialty' => [
-        'dice_type' => '1d6',
-        'results' => [
-            1 => [
-                'description' => 'Atypical Shipping Methods. This trading post is known for having unique and effective ways to move goods.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            2 => [
-                'description' => 'Food & Drink. This trading post is known for [d6]:',
-                'special' => null,
-                'table_modifications' => null,
-                'choice' => [
-                    'specialty_food_and_drink' => [
-                        'dice_type' => '1d6',
-                        'results' => [
-                            1 => 'Excellent and unique food',
-                            2 => 'Excellent and unique food',
-                            3 => 'Excellent and unique food',
-                            4 => 'Plentiful and varied high-quality beverages',
-                            5 => 'Plentiful and varied high-quality beverages',
-                            6 => 'Plentiful and varied high-quality beverages',
-                        ],
-                    ],
-                ],
-            ],
-            3 => [
-                'description' => 'Hospitality. The main inn here is particularly good, offering excellent service, comfortable rooms, and good food.',
-                'special' => 'If you roll for the inn’s quality using the quality table found in step 3, ignore results that would make it ‘poor’.',
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            4 => [
-                'description' => 'Information. This trading post is known as a source for reliable information. They may not know everything, but your chances of finding solid gossip, lore, news, or an intriguing tidbit here is good.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            5 => [
-                'description' => 'Purchasing Connections. This trading post is known for having folks who can find things. If they don’t have (or know about) what you’re looking for, they can direct you to someone who does.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => null,
-            ],
-            6 => [
-                'description' => 'Unscrupulous Contractors. This trading post is known for having people who can get just about anything done, if the coin is right.',
-                'special' => 'Free Location: Service - Hired Help [Roll 1d10]:',
-                'table_modifications' => null,
-                'choice' => [
-                    'specialty_unscrupulous_contractors' => [
-                        'dice_type' => '1d10',
-                        'results' => [
-                            1 => 'Brutes & Brawlers',
-                            2 => 'Cloak & Dagger',
-                            3 => 'Bows & Slings',
-                            4 => 'Scribes & Clerks',
-                            5 => 'Guides & Trackers',
-                            6 => 'Caravan & Mount',
-                            7 => 'Arcane Academics',
-                            8 => 'Magic Mercenaries',
-                            9 => 'Priestly Guidance',
-                            10 => 'Hands of the Divine',
-                        ],
-                    ],
-                ],
-            ],
+        'atypical_shipping_methods' => 'Atypical Shipping Methods. This trading post is known for having unique and effective ways to move goods.',
+        'food_and_drink' => 'Food & Drink. This trading post is known for [d6]:',
+        'hospitality' => 'Hospitality. The main inn here is particularly good, offering excellent service, comfortable rooms, and good food. If you roll for the inn’s quality using the quality table found in step 3, ignore results that would make it ‘poor’.',
+        'information' => 'Information. This trading post is known as a source for reliable information. They may not know everything, but your chances of finding solid gossip, lore, news, or an intriguing tidbit here is good.',
+        'purchasing_connections' => 'Purchasing Connections. This trading post is known for having folks who can find things. If they don’t have (or know about) what you’re looking for, they can direct you to someone who does.',
+        'unscrupulous_contractors' => 'Unscrupulous Contractors. This trading post is known for having people who can get just about anything done, if the coin is right.',
+
+        'specials' => [
+            // 3
+            'hospitality_special' => 'If you roll for the inn’s quality using the quality table found in step 3, ignore results that would make it ‘poor’',
+
+            // 6
+            'free_location_special' => 'Free Location: Service - Hired Help [Roll 1d10]:'
+        ],
+
+        'choices' => [
+            // 2
+            'excellent_and_unique_food' => 'Excellent and unique food',
+            'plentiful_and_varied_high_quality_beverages' => 'Plentiful and varied high-quality beverages',
+
+            // 6
+            'brutes_and_brawlers' => 'Brutes & Brawlers',
+            'cloak_and_dagger' => 'Cloak & Dagger',
+            'bows_and_slings' => 'Bows & Slings',
+            'scribes_and_clerks' => 'Scribes & Clerks',
+            'guides_and_trackers' => 'Guides & Trackers',
+            'caravan_and_mount' => 'Caravan & Mount',
+            'arcane_academics' => 'Arcane Academics',
+            'magic_mercenaries' => 'Magic Mercenaries',
+            'priestly_guidance' => 'Priestly Guidance',
+            'hands_of_the_divine' => 'Hands of the Divine',
+
         ],
     ],
 
     /*AGE*/
     'age' => [
-        'dice_type' => '1d20',
-        'results' => [
-            1 => [
-                'description' => 'Recent. The trading post was established within the past year.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => -1,
-                ],
-            ],
-            2 => [
-                'description' => 'Recent. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => -1,
-                ],
-            ],
-            3 => [
-                'description' => 'Recent. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => -1,
-                ],
-            ],
-            4 => [
-                'description' => 'Established. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 0,
-                ],
-            ],
-            5 => [
-                'description' => 'Established. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 0,
-                ],
-            ],
-            6 => [
-                'description' => 'Established. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 0,
-                ],
-            ],
-            7 => [
-                'description' => 'Established. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 0,
-                ],
-            ],
-            8 => [
-                'description' => 'Established. The trading post has been around for at least a couple of years.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 0,
-                ],
-            ],
-            9 => [
-                'description' => 'Mature. The trading post was originally built decades ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 1,
-                ],
-            ],
-            10 => [
-                'description' => 'Mature. The trading post was originally built decades ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 1,
-                ]
-            ],
-            11 => [
-                'description' => 'Mature. The trading post was originally built decades ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 1,
-                ]
-            ],
-            12 => [
-                'description' => 'Mature. The trading post was originally built decades ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 1,
-                ]
-            ],
-            13 => [
-                'description' => 'Mature. The trading post was originally built decades ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 1,
-                ]
-            ],
-            14 => [
-                'description' => 'Old. The trading post was built around a hundred years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 2,
-                ],
-            ],
-            15 => [
-                'description' => 'Old. The trading post was built around a hundred years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 2,
-                ],
-            ],
-            16 => [
-                'description' => 'Old. The trading post was built around a hundred years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 2,
-                ],
-            ],
-            17 => [
-                'description' => 'Old. The trading post was built around a hundred years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 2,
-                ],
-            ],
-            18 => [
-                'description' => 'Ancient. The trading post was built hundreds of years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 3,
-                ],
-            ],
-            19 => [
-                'description' => 'Ancient. The trading post was built hundreds of years ago.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 3,
-                ],
-            ],
-            20 => [
-                'description' => 'Unknown. No one really knows when the trading post was established.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'visitor_traffic' => 4,
-                ],
-            ],
-        ],
+        'recent' => 'Recent. The trading post was established within the past year.',
+        'established' => 'Established. The trading post has been around for at least a couple of years.',
+        'mature' => 'Mature. The trading post was originally built decades ago.',
+        'old' => 'Old. The trading post was built around a hundred years ago.',
+        'ancient' => 'Ancient. The trading post was built hundreds of years ago.',
+        'unknown' => 'Unknown. No one really knows when the trading post was established.',
     ],
 
     /*CONDITION*/
     'condition' => [
-        'dice_type' => '1d20',
-        'results' => [
-            1 => [
-                'description' => 'Ramshackle. A few of the buildings look to be falling down. There are no formal roads, only trodden paths.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -6,
-                ],
-            ],
-            2 => [
-                'description' => 'Ramshackle. A few of the buildings look to be falling down. There are no formal roads, only trodden paths.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -6,
-                ],
-            ],
-            3 => [
-                'description' => 'Poor. The buildings and surroundings are rough and dirty. Roads are uneven dirt and dust.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -3,
-                ],
-            ],
-            4 => [
-                'description' => 'Poor. The buildings and surroundings are rough and dirty. Roads are uneven dirt and dust.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -3,
-                ],
-            ],
-            5 => [
-                'description' => 'Poor. The buildings and surroundings are rough and dirty. Roads are uneven dirt and dust.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -3,
-                ],
-            ],
-            6 => [
-                'description' => 'Poor. The buildings and surroundings are rough and dirty. Roads are uneven dirt and dust.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => -3,
-                ],
-            ],
-            7 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            8 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            9 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            10 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            11 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            12 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            13 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            14 => [
-                'description' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 0,
-                ],
-            ],
-            15 => [
-                'description' => 'Good. Most of the structures are exceptionally well kept and moderately decorated. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 3,
-                ],
-            ],
-            16 => [
-                'description' => 'Good. Most of the structures are exceptionally well kept and moderately decorated. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 3,
-                ],
-            ],
-            17 => [
-                'description' => 'Good. Most of the structures are exceptionally well kept and moderately decorated. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 3,
-                ],
-            ],
-            18 => [
-                'description' => 'Good. Most of the structures are exceptionally well kept and moderately decorated. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 3,
-                ],
-            ],
-            19 => [
-                'description' => 'Immaculate. The shops and houses are spotless, and well-adorned with tasteful decorations. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 6,
-                ],
-            ],
-            20 => [
-                'description' => 'Immaculate. The shops and houses are spotless, and well-adorned with tasteful decorations. Roads are made of fine, smooth, well-placed flagstones.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'population_wealth' => 6,
-                ],
-            ],
-        ],
+        'ramshackle' => 'Ramshackle. A few of the buildings look to be falling down. There are no formal roads, only trodden paths.',
+        'poor' => 'Poor. The buildings and surroundings are rough and dirty. Roads are uneven dirt and dust.',
+        'fair' => 'Fair. The buildings are clean and sparsely decorated. Roads are flattened earth, possibly with gravel.',
+        'good' => 'Good. Most of the structures are exceptionally well kept and moderately decorated. Roads are made of fine, smooth, well-placed flagstones.',
+        'immaculate' => 'Immaculate. The shops and houses are spotless, and well-adorned with tasteful decorations. Roads are made of fine, smooth, well-placed flagstones.',
     ],
+
+
 
     /*VISITOR TRAFFIC*/
     'visitor_traffic' => [
-        'dice_type' => '1d20',
-        'results' => [
-            1 => [
-                'description' => 'Vacant. No one seems to be visiting this place.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 0,
-                    'crime' => 2,
-                ],
-            ],
-            2 => [
-                'description' => 'Vacant. No one seems to be visiting this place.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 0,
-                    'crime' => 2,
-                ],
-            ],
-            3 => [
-                'description' => 'Groups. Visitors are a rarity, though a few might be around.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 1,
-                    'crime' => 1,
-                ],
-            ],
-            4 => [
-                'description' => 'Groups. Visitors are a rarity, though a few might be around.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 1,
-                    'crime' => 1,
-                ],
-            ],
-            5 => [
-                'description' => 'Groups. Visitors are a rarity, though a few might be around.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 1,
-                    'crime' => 1,
-                ],
-            ],
-            6 => [
-                'description' => 'Groups. Visitors are a rarity, though a few might be around.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 1,
-                    'crime' => 1,
-                ],
-            ],
-            7 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            8 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            9 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            10 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            11 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            12 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            13 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            14 => [
-                'description' => 'Crowds. It is typical to see some new visitors most days.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 2,
-                    'crime' => 0,
-                ],
-            ],
-            15 => [
-                'description' => 'Droves. There are lots of new faces on a regular basis.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 3,
-                    'crime' => -1,
-                ],
-            ],
-            16 => [
-                'description' => 'Droves. There are lots of new faces on a regular basis.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 3,
-                    'crime' => -1,
-                ],
-            ],
-            17 => [
-                'description' => 'Droves. There are lots of new faces on a regular basis.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 3,
-                    'crime' => -1,
-                ],
-            ],
-            18 => [
-                'description' => 'Droves. There are lots of new faces on a regular basis.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 3,
-                    'crime' => -1,
-                ],
-            ],
-            19 => [
-                'description' => 'Masses. New people are everywhere, coming and going at all times.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 4,
-                    'crime' => -2,
-                ],
-            ],
-            20 => [
-                'description' => 'Masses. New people are everywhere, coming and going at all times.',
-                'special' => null,
-                'choice' => null,
-                'table_modifications' => [
-                    'size' => 4,
-                    'crime' => -2,
-                ],
-            ],
-        ],
+        'vacant' => 'Vacant. No one seems to be visiting this place.',
+        'groups' => 'Groups. Visitors are a rarity, though a few might be around.',
+        'crowds' => 'Crowds. It is typical to see some new visitors most days.',
+        'droves' => 'Droves. There are lots of new faces on a regular basis.',
+        'masses' => 'Masses. New people are everywhere, coming and going at all times.',
     ],
 
 ];
