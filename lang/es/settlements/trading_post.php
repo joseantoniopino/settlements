@@ -57,8 +57,8 @@ return [
         'recent' => 'Reciente. El puesto comercial se ha establecido hace menos de un año.',
         'established' => 'Asentado. El puesto comercial lleva abierto al menos un par de años.',
         'mature' => 'Longevo. El puesto comercial se construyó hace décadas.',
-        'old' => 'Old. The trading post was built around a hundred years ago.',
-        'ancient' => 'Viejo. El puesto comercial se construyó hace unos cien años.',
+        'old' => 'Viejo. El puesto comercial se construyó hace unos cien años.',
+        'ancient' => 'Antiguo. El puesto comercial se construyó hace siglos.',
         'unknown' => 'Desconocido. Nadie sabe cuánto tiempo lleva abierto este puesto comercial.',
     ],
 

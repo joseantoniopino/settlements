@@ -9,10 +9,12 @@ return new class extends Migration {
     {
         Schema::create('trading_posts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('name');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->integer('origin');
             $table->integer('specialty');
+            $table->integer('age');
             $table->integer('condition');
             $table->string('visitor_traffic');
             $table->timestamps();

@@ -13,6 +13,7 @@ class TradingPost extends TradingPostGenerator
         'description',
         'origin',
         'specialty',
+        'age',
         'condition',
         'visitor_traffic',
     ];

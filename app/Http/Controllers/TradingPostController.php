@@ -2,10 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Settlements\TradingPost\TradingPost;
+
 class TradingPostController extends Controller
 {
     public function index()
     {
-        return view('trading-posts.index');
+        $tradingPosts = TradingPost::where('user_id', auth()->user()->id)->get();
+        $tradingPostData = TradingPost::getGenerator();
+        return view('trading-posts.index', compact('tradingPosts', 'tradingPostData'));
+    }
+
+    public function create()
+    {
+        $tradingPostData = TradingPost::getGenerator();
+        return view('trading-posts.create', compact('tradingPostData'));
     }
 }

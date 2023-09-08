@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class TradingPostGenerator extends Model
 {
-    public static function getGenerator(string $type): array
+    public static function getGenerator(?string $type = null): array
     {
-        return self::generators()[$type];
+        return is_null($type)
+            ? self::generators()
+            : self::generator($type);
+
     }
 
     private static function generators(): array
