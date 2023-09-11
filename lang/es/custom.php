@@ -19,6 +19,11 @@ return [
     'capital_card_description' => 'Las capitales son ciudades que albergan la sede del líder de una nación, como un monarca. Son centros importantes con una población significativa, impresionantes edificios y muchas oportunidades de exploración. La población de una capital suele variar entre quince mil y veinte mil habitantes, pero en casos excepcionales, puede superar los doscientos mil o incluso el millón, dependiendo del contexto histórico.',
     'fortresses' => 'fortificaciones',
     'fortress_card_description' => 'Las fortificaciones son enclaves sólidos y seguros, generalmente de carácter defensivo, como fuertes, castillos o fortalezas. Pueden estar ubicadas en lugares remotos o en zonas urbanas y desempeñan diversas funciones, desde residencias hasta sedes de organizaciones. La proximidad a una fortificación no solo brinda seguridad, sino que también indica la presencia de recursos valiosos en la región.',
-
+    'generate_attribute' => 'Genera un atributo...',
+    'origin' => 'origen',
+    'specialty' => 'especialidad',
+    'age' => 'antigüedad',
+    'condition' => 'estado',
+    'visitor_traffic' => 'afluencia de visitantes',
 
 ];

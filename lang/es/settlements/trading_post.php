@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-
     /*ORIGEN*/
     'origin' => [
         "accidental" => "Accidental: El puesto comercial se creó por accidente, por ejemplo, después de que se averiase o perdiese una caravana. Las medidas que se tomaron para remediar el accidente acabaron dando lugar al puesto comercial.",

@@ -5,9 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="mx-3 mt-5 p-6 lg:p-8 bg-white dark:bg-gray-800 dark:bg-gradient-to-bl dark:from-gray-700/50 dark:via-transparent border-b border-gray-200 dark:border-gray-700">
-
-    </div>
+    <livewire:trading-posts.create />
 
 
 </x-app-layout>

@@ -10,7 +10,7 @@ class TradingPostGenerator extends Model
     {
         return is_null($type)
             ? self::generators()
-            : self::generator($type);
+            : self::generators()[$type];
 
     }
 

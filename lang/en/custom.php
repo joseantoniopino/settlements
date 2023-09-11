@@ -20,6 +20,11 @@ return [
     'capital_card_description' => 'Capitals are cities that house the seat of a nation\'s leader, such as a monarch. They are significant hubs with a substantial population, impressive buildings, and ample exploration opportunities. The population of a capital typically ranges from fifteen to twenty thousand residents, but in exceptional cases, it can exceed two hundred thousand or even a million, depending on the historical context.',
     'fortresses' => 'fortresses',
     'fortress_card_description' => 'Fortifications are sturdy and secure sites, typically of a defensive nature, such as forts, castles, or fortresses. They can be located in remote areas or urban zones and serve various purposes, from residences to organizational headquarters. The proximity to a fortification not only provides security but also suggests the presence of valuable resources in the region.',
-
+    'generate_attribute' => 'Generate an attribute...',
+    'origin' => 'origin',
+    'specialty' => 'specialty',
+    'age' => 'age',
+    'condition' => 'condition',
+    'visitor_traffic' => 'visitor traffic',
 
 ];

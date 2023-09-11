@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataModels\TradingPostData;
 use App\Models\Settlements\TradingPost\TradingPost;
 
 class TradingPostController extends Controller
@@ -15,7 +16,6 @@ class TradingPostController extends Controller
 
     public function create()
     {
-        $tradingPostData = TradingPost::getGenerator();
-        return view('trading-posts.create', compact('tradingPostData'));
+        return view('trading-posts.create');
     }
 }
